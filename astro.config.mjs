@@ -1,12 +1,12 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import { defineConfig } from 'astro/config';
 import vercelStatic from '@astrojs/vercel/static';
 
 // https://astro.build/config
 export default defineConfig({
 	redirects: {
-		'/': '/guides/example/'
+		'/': '/install/example',
+		'guides/example/': '/install/example'
 	},
 	output: 'static',
 	adapter: vercelStatic(),
